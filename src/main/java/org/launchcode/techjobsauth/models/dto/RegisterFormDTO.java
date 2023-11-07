@@ -8,7 +8,7 @@ public class RegisterFormDTO extends LoginFormDTO {
 
     @NotNull(message = "Password is required.")
     @NotBlank(message = "Password is required.")
-    @Size(min = 8, max = 30, message = "Username must be 8-30 characters long.")
+    @Size(min = 6, max = 30, message = "Invalid username. Must be between 3 and 20 characters.")
     private String verifyPassword;
 
     public String getVerifyPassword() {
